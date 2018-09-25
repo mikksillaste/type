@@ -34,7 +34,7 @@ let noo: null = null;
 //never
 let error = (): never => {
     throw Error('blah!');
-}
+};
 
 // Type Assertions:
 let ohhithere: any = "OH HI THERE";
@@ -50,18 +50,28 @@ interface RobotArmy {
 
 let fightRobotArmy = (robots: RobotArmy) =>{
     console.log('FIGHT!');
-}
+};
 let fightRobotArmy2 = (robots: {count: number, type: string, magic?: string}) =>{
     console.log('FIGHT!');
+};
+
+//Type Assertion
+interface CatArmy {
+    count: number,
+    type: string,
+    magic: string
 }
+
+let dog = {} as CatArmy;
+dog.count;
 
 //Function
 let fightRobotArmyF = (robots: RobotArmy): void =>{
     console.log('FIGHT!');
-}
+};
 let fightRobotArmy2F = (robots: {count: number, type: string, magic?: string}): void =>{
     console.log('FIGHT!');
-}
+};
 
 // *** Classes
 class Animal {

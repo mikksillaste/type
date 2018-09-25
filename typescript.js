@@ -1,4 +1,3 @@
-"use strict";
 //boolean
 var isCool = false;
 //number
@@ -41,6 +40,8 @@ var fightRobotArmy = function (robots) {
 var fightRobotArmy2 = function (robots) {
     console.log('FIGHT!');
 };
+var dog = {};
+dog.count;
 //Function
 var fightRobotArmyF = function (robots) {
     console.log('FIGHT!');
