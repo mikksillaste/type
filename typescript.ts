@@ -95,4 +95,4 @@ let x = 3;
 // automatimally detexts x is a number.
 
 //Union Type
-let confused: string | number = 'hello';
+let confused: string | number | boolean = 'hello';
